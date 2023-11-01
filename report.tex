@@ -1,0 +1,24 @@
+\include{preamble}
+
+\newtotcounter{citenum} %From the package documentation
+\def\oldbibitem{}
+\let\oldbibitem=\bibitem
+\def\bibitem{\stepcounter{citenum}\oldbibitem}
+
+\begin{document}
+\includepdf[pages={1}]{title.pdf}
+
+\tableofcontents
+\newpage
+\section{Введение}
+
+\section{Постановка задачи}
+\subsection{Условие}
+\subsection{Блок--схема представления модели}
+\section{Создание модели в среде AnyLogic}
+\section{Имитационный эксперимент}
+\section{Заключение}
+
+
+
+\end{document}
